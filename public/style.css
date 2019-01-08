@@ -1,7 +1,20 @@
 body{
-  margin: 10px;
+  background-color:white;
+  background-image:url(images/bar.jpg);
 }
 
 div{
-  margin: 5px 0px;
+  margin: 0px 0px;
+}
+
+.pageContent{
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.title1{
+  position: absolute;
+  top: 25%; left:42%;
 }
