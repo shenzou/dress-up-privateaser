@@ -8,12 +8,15 @@
     <link rel="stylesheet" href="style.css" type="text/css">
   </head>
   <body>
+    <h1 class="display-4">
+      <p class="text-center">Privateaser project</p>
+    </h1>
     <form>
       <div class="container">
           <div id="bar" class="form-group row">
             <div class="col-sm">
               <label for="inputName">Bar name</label>
-              <input class="form-control name shadow p-3 mb-5 bg-white rounded" type="text" placeholder="Bar name" id="inputName"/>
+              <input class="form-control name shadow p-3 mb-5 bg-white rounded" type="text" placeholder="Enter the bar wanted" id="inputName"/>
             </div>
             <div class="col-sm">
               <label for="inputPPH">Price per hour</label>
@@ -52,7 +55,9 @@
       </div>
     </form>
 
-    <button id="compute" class="btn btn-primary">Compute</button>
+    <p class="text-center">
+      <button id="compute" class="btn btn-primary">Compute</button>
+    </p>
     <div id="actors"></div>
     <script src="privateaser.js"></script>
     <script src="index.js"></script>
