@@ -1,23 +1,64 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>CSS/HTML Workshop with Privateaser</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
   </head>
   <body>
-    <div id="bar">
-      <input class="name" type="text" placeholder="Bar name"/>
-      <input class="price-by-hour" type="number" placeholder="Price by hour"/>
-      <input class="price-by-person" type="number" placeholder="Price by person"/>
-    </div>
-    <div id="booker">
-      <input class="name" type="text" placeholder="Booker name"/>
-      <input class="time" type="number" placeholder="Time in h"/>
-      <input class="persons" type="number" placeholder="Persons"/>
-      <input class="option" type="checkbox" placeholder="Deductible option"/>
-    </div>
-    <button id="compute">Compute</button>
+    <form>
+      <div class="container">
+          <div id="bar" class="form-group row">
+            <div class="col-sm">
+              <label for="inputName">Bar name</label>
+              <input class="form-control name shadow p-3 mb-5 bg-white rounded" type="text" placeholder="Bar name" id="inputName"/>
+            </div>
+            <div class="col-sm">
+              <label for="inputPPH">Price per hour</label>
+              <input class="form-control price-by-hour shadow p-3 mb-5 bg-white rounded" type="number" placeholder="Price by hour" id="inputPPH"/>
+            </div>
+            <div class="col-sm">
+              <label for="inputPPP">Price per person</label>
+              <input class="price-by-person form-control shadow p-3 mb-5 bg-white rounded" type="number" placeholder="Price by person" id="inputPPP"/>
+            </div>
+          </div>
+      </div>
+      <div class="container">
+
+        <div id="booker" class="form-group">
+          <div class="row">
+          <div class="col-sm">
+            <label for="inputName2">Booker name</label>
+            <input class="name form-control shadow p-3 mb-5 bg-white rounded" type="text" placeholder="Booker name" id="inputName2"/>
+          </div>
+          <div class="col-sm">
+            <label for="inputTime">Time in h</label>
+            <input class="time form-control shadow p-3 mb-5 bg-white rounded" type="number" placeholder="Time in h" id="inputTime"/>
+          </div>
+          <div class="col-sm">
+            <label for="inputPers">Number of persons</label>
+            <input class="persons form-control shadow p-3 mb-5 bg-white rounded" type="number" placeholder="Persons" id="inputPers"/>
+          </div>
+          </div>
+          <div class="row">
+          <div class="col-sm">
+            <label for="inputDed">Deductible option</label>
+            <input class="option form-check-label" type="checkbox" placeholder="Deductible option" id="inputDed"/>
+          </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <button id="compute" class="btn btn-primary">Compute</button>
     <div id="actors"></div>
     <script src="privateaser.js"></script>
     <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
   </body>
 </html>
