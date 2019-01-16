@@ -10,7 +10,7 @@
       <div class="actor">
           <span>${actor.who}</span>
           <span>${actor.type}</span>
-          <span>${actor.amount}</span>
+          <span>${actor.amount + " €"}</span>
         </div>
       `;
     }).join('');
@@ -31,6 +31,9 @@
     const actors = PRIVATEASER.payActors(bar, time, persons, option);
 
     render(actors);
+
+    document.getElementById("result").style.display="block";
+
 
     return;
   });
