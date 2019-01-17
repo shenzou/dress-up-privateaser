@@ -15,6 +15,7 @@ const PRIVATEASER = (() => {
       'name': document.querySelector('#bar .name').value,
       'pricePerHour': document.querySelector('#bar .price-by-hour').value,
       'pricePerPerson': document.querySelector('#bar .price-by-person').value
+      
     };
   };
 
